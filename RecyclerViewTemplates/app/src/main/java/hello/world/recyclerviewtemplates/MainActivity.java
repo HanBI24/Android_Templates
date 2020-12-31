@@ -18,7 +18,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private ArrayList<Dictionary> mArrayList;
     private CustomAdapter mAdapter;
-    private int cnt = -1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,17 +39,10 @@ public class MainActivity extends AppCompatActivity {
                 mLinearLayoutManager.getOrientation());
         mRecyclerView.addItemDecoration(dividerItemDecoration);
 
-
         Button btnInsert = (Button)findViewById(R.id.button_main_insert);
         btnInsert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                for(int i=0; i<10; i++) {
-//                    cnt++;
-//                    Dictionary data = new Dictionary(cnt + "", "Apple" + cnt, "사과" + cnt);
-//                    mArrayList.add(data);
-//                    mAdapter.notifyDataSetChanged();
-//                }
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 View view = LayoutInflater.from(MainActivity.this)
                         .inflate(R.layout.edit_box, null, false);
@@ -72,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
                         Dictionary dict = new Dictionary(strID, strEnglish, strKorean );
                         mArrayList.add(0, dict); //첫번째 줄에 삽입됨
                         //mArrayList.add(dict); //마지막 줄에 삽입됨
-                        // 어댑터에서 RecyclerView에 반영하도록 합니다.
                         // notifyItemInserted(): 특정 position에 삽입하고 싶을 때 사용
                         mAdapter.notifyItemInserted(0);
                         //mAdapter.notifyDataSetChanged();
