@@ -54,16 +54,18 @@
         android:text="phone"
         android:textStyle="bold" />
 
-    <CheckBox
-        android:id="@+id/check_box"
+    <TextView
+        android:id="@+id/delete_item"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:drawableEndCompat="@drawable/ic_baseline_delete_forever_24"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/korean_listitem"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

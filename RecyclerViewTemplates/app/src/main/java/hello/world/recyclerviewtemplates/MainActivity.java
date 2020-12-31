@@ -35,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
         mAdapter = new CustomAdapter(mArrayList);
         mRecyclerView.setAdapter(mAdapter);
 
+        // 구분선
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(),
                 mLinearLayoutManager.getOrientation());
         mRecyclerView.addItemDecoration(dividerItemDecoration);
+
 
         Button btnInsert = (Button)findViewById(R.id.button_main_insert);
         btnInsert.setOnClickListener(new View.OnClickListener() {
@@ -58,9 +60,8 @@ public class MainActivity extends AppCompatActivity {
                 final EditText editTextID = (EditText) view.findViewById(R.id.edittext_dialog_id);
                 final EditText editTextEnglish = (EditText) view.findViewById(R.id.edittext_dialog_endlish);
                 final EditText editTextKorean = (EditText) view.findViewById(R.id.edittext_dialog_korean);
-
-                ButtonSubmit.setText("삽입");
                 final AlertDialog dialog = builder.create();
+                ButtonSubmit.setText("삽입");
 
                 ButtonSubmit.setOnClickListener(new View.OnClickListener() {
                     public void onClick(View v) {
@@ -79,6 +80,44 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 dialog.show();
+            }
+        });
+
+        // 1. 인터페이스로 구현
+        // 2. CustomAdapter에 인터페이스의 Callback 메서드 Overriding 구현
+        // 3. MainActivity에서 mAdapter 객체 생성 후 Callback method Overriding
+        mAdapter.setOnItemClickListener(new ItemClickListener() {
+            @Override
+            public void OnItemClick(int position, Dictionary dictionary) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                View view = LayoutInflater.from(MainActivity.this)
+                        .inflate(R.layout.edit_box, null, false);
+                builder.setTitle("Update User Info")
+                       .setView(view);
+
+                Button btnReplace = (Button) view.findViewById(R.id.button_dialog_submit);
+                btnReplace.setText("수정");
+
+                final EditText editTextID = (EditText) view.findViewById(R.id.edittext_dialog_id);
+                final EditText editTextEnglish = (EditText) view.findViewById(R.id.edittext_dialog_endlish);
+                final EditText editTextKorean = (EditText) view.findViewById(R.id.edittext_dialog_korean);
+
+                final AlertDialog dialog = builder.create();
+                dialog.show();
+
+                btnReplace.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        String strID = editTextID.getText().toString();
+                        String strEnglish = editTextEnglish.getText().toString();
+                        String strKorean = editTextKorean.getText().toString();
+                        Dictionary dict = new Dictionary(strID, strEnglish, strKorean );
+                        mArrayList.set(position, dict);
+                        mAdapter.notifyItemChanged(position);
+                        dialog.dismiss();
+                    }
+                });
+
             }
         });
     }
