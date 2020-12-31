@@ -1,4 +1,4 @@
-package hello.world.recyclerviewtemplates.adapters;
+package hello.world.recyclerviewtemplates.Adapters;
 
 import android.util.TypedValue;
 import android.view.Gravity;
