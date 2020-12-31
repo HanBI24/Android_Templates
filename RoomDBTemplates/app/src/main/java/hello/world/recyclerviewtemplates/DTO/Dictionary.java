@@ -1,4 +1,4 @@
-package hello.world.recyclerviewtemplates;
+package hello.world.recyclerviewtemplates.DTO;
 
 public class Dictionary {
     private String id;

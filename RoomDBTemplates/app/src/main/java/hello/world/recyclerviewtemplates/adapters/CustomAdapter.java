@@ -1,25 +1,20 @@
-package hello.world.recyclerviewtemplates;
+package hello.world.recyclerviewtemplates.adapters;
 
-import android.graphics.Color;
-import android.util.Log;
 import android.util.TypedValue;
-import android.view.ActionMode;
 import android.view.Gravity;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+
+import hello.world.recyclerviewtemplates.DTO.Dictionary;
+import hello.world.recyclerviewtemplates.ItemClickListener;
+import hello.world.recyclerviewtemplates.R;
 
 // RecyclerView CRUD.
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {

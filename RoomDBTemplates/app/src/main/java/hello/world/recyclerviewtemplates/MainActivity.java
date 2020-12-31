@@ -11,9 +11,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
+
+import hello.world.recyclerviewtemplates.DTO.Dictionary;
+import hello.world.recyclerviewtemplates.adapters.CustomAdapter;
 
 public class MainActivity extends AppCompatActivity {
     private ArrayList<Dictionary> mArrayList;
