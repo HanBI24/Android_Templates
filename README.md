@@ -4,3 +4,4 @@ Android_Templates
     - Recycler View (Live Data)
     - Room DB (CRUD)
     - View Model (MVVM Architecture)
+    - Data Binding
