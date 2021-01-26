@@ -1,14 +1,4 @@
-# Android_Templates
-Android_Templates (Seperate branch)
+# Clone_Kotlin
+Clone coding in kotlin
 
-- Java
-  - RecyclerView (CURD)
-  - Room DB (RecyclerView + Room)
-  - ViewModel (RecyclerView + Room + ViewModel)  
-  
-- Kotlin
-  - MVVM + RecyclerView (Separate package)
-    - Recycler View (Live Data)
-    - Room DB (CRUD)
-    - View Model (MVVM Architecture)
-    - Data Binding
+**1. [MVVM pattern(add Repository) in RecyclerView and Room](https://ddangeun.tistory.com/81?category=874345)**
