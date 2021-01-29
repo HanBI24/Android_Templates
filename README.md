@@ -12,3 +12,4 @@ Android_Templates (Seperate branch)
     - Room DB (CRUD)
     - View Model (MVVM Architecture)
     - Data Binding
+    - MVVM + Navigation (BottomSheet) => 예정...
