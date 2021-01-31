@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         // bottom navigation view와 navigation을 묶어줌
+        // 일반 fragment만 사용하고 싶으면 controller 연결할 필요 없음
         NavigationUI.setupWithNavController(mBinding.myBottomNav, navController)
     }
 }

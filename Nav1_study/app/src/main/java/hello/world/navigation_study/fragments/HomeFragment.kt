@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import hello.world.navigation_study.R
@@ -36,13 +37,17 @@ class HomeFragment : Fragment() {
         // (필쑤!) nav_graph.xml에서 action(화면 전환)을 설정해야 direction이 생김
         // argument는 그냥 fragment에서 받는 클래스만 생성할 뿐
         // default value
+        // 여러개의 fragment에 값을 넘기기 위해선 그에 맞는 fragment view에 action을 추가하면 됨
 //        findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToMusicFragment())
         binding.homeFragmentTitle.setOnClickListener {
-            findNavController().navigate(
-                HomeFragmentDirections.actionHomeFragmentToMusicFragment(
-                    itemId = 10
-                )
-            )
+//            findNavController().navigate(
+//                HomeFragmentDirections.actionHomeFragmentToMusicFragment(
+//                    itemId = 10
+//                )
+//            )
+            // 일반적인 fragment 전환
+            findNavController().navigate(R.id.friendsFragment)
+
         }
         return mBinding?.root
     }

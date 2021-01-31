@@ -26,6 +26,9 @@
         <action
             android:id="@+id/action_homeFragment_to_musicFragment"
             app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
     </fragment>
 
     <fragment
