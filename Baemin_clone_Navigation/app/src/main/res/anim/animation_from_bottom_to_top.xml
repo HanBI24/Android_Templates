@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500">
+
+<!-- 현 위치에서 50% 밑의 위치에서 시작   -->
+    <translate
+        android:fromYDelta="50%"
+        android:toYDelta="0" />
+
+<!-- fade In/out   -->
+<!-- fromAlpha="0" => 안 보였다가   -->
+<!-- toAlpha="1" 보이도록   -->
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1" />
+
+</set>
