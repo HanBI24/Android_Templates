@@ -7,4 +7,5 @@ Clone coding in kotlin
 
 
 **2. [Clone Baemin](https://programmar.tistory.com/27?category=883390)**  
-&nbsp;&nbsp;&nbsp;**2-1. [Using slide drawer (MVVM)](https://programmar.tistory.com/27?category=883390)**
+&nbsp;&nbsp;&nbsp;**2-1. [Using slide drawer (MVVM)](https://programmar.tistory.com/27?category=883390)**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;기존 **kotlin-extension**으로 작성된 코드를 **View Binding**으로 수정하여 작성
