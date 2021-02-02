@@ -1,4 +1,4 @@
-package hello.world.baemin_clone.adapter
+package hello.world.baemin_clone.view.fragment.a_home.adapter
 
 import android.animation.Animator
 import android.animation.ObjectAnimator

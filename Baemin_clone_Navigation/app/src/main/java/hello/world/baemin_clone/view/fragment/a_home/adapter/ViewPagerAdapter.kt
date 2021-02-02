@@ -1,4 +1,4 @@
-package hello.world.baemin_clone.adapter
+package hello.world.baemin_clone.view.fragment.a_home.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import hello.world.baemin_clone.R
 import hello.world.baemin_clone.data.BannerItem
-import hello.world.baemin_clone.listener.Interaction
+import hello.world.baemin_clone.view.fragment.a_home.listener.Interaction
 
 class ViewPagerAdapter(private val interaction: Interaction) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {

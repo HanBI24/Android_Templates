@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="hello.world.baemin_clone.view.fragment.a_home.AHomeFragment"
+        android:label="fragment_a_home"
+        tools:layout="@layout/fragment_a_home" />
+    <fragment
+        android:id="@+id/eatFragment"
+        android:name="hello.world.baemin_clone.view.fragment.b_eat.BEatFragment"
+        android:label="fragment_b_eat"
+        tools:layout="@layout/fragment_b_eat" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="hello.world.baemin_clone.view.fragment.CFavoriteFragment"
+        android:label="fragment_c_favoritee"
+        tools:layout="@layout/fragment_c_favoritee" />
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="hello.world.baemin_clone.view.fragment.DOrderFragment"
+        android:label="fragment_d_order"
+        tools:layout="@layout/fragment_d_order" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="hello.world.baemin_clone.view.fragment.EProfileFragment"
+        android:label="fragment_e_profile"
+        tools:layout="@layout/fragment_e_profile" />
+</navigation>

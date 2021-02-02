@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="홈"
+        />
+
+    <item
+        android:id="@+id/eatFragment"
+        android:icon="@drawable/ic_baseline_live_tv_24"
+        android:title="뭐먹지"
+        />
+
+    <item
+        android:id="@+id/favoriteFragment"
+        android:icon="@drawable/ic_baseline_favorite_border_24"
+        android:title="찜한가게"
+        />
+
+    <item
+        android:id="@+id/orderFragment"
+        android:icon="@drawable/ic_baseline_menu_24"
+        android:title="주문내역"
+        />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_baseline_insert_emoticon_24"
+        android:title="My배민"
+        />
+</menu>
