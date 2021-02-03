@@ -16,4 +16,5 @@ Clone coding in kotlin
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. 개선점  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - BindingAdapter를 사용하여 View와 Model을 더욱 독립적으로 만들기  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Adapter에서 View Binding으로 교체하기(기존: id 참조)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Slide Menu를 모든 navigation에 적용하기
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Slide Menu를 모든 navigation에 적용하기  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - ExoPlayer 추가하기  
